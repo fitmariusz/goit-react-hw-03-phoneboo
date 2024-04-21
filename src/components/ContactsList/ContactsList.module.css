@@ -1,0 +1,32 @@
+.contener{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+.ul{display: flex;
+    list-style: none;
+    /* margin: auto; */
+    gap: 10px;
+flex-direction: column;
+}
+
+.input{
+    display: flex;
+    color: aquamarine;
+    background-color: black;
+}
+
+.li{
+    
+    display: inline-flex;
+    justify-content:space-around;
+    /* justify-items: ; */
+}
+.span{
+    display: flex;
+    justify-content:space-around;
+}
+.button{
+    background-color: black;
+    color: red;
+}

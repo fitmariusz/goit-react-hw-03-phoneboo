@@ -1,0 +1,49 @@
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 20px;
+
+}
+.input{
+    padding: 5px;
+    border: 0;
+    border-radius: 20px;
+    background-color: black;
+    color: cadetblue;
+
+        
+}
+.input:valid {
+        border-color: green;
+        box-shadow: rgb(30, 247, 1) 0px 0px 0px 1px,
+                rgb(71, 230, 8,1) 0px 0px 20px 1px,
+                rgb(1, 203, 45,0.1) 0px 0px 0px inset;
+
+
+    /* background-color:; */
+}
+
+.input:invalid {
+    /* background-color: lightpink; */
+            box-shadow: rgb(247, 3, 1) 0px 0px 5px 1px,
+                    rgba(230, 8, 8, 1) 0px 0px 20px 1px,
+                    rgba(203, 7, 1, 1) 0px 0px 0px inset;
+}
+
+.button{
+    padding: 5px;
+    margin: 10px auto;
+    color: rgb(30, 247, 1);
+    border-radius: 10px;
+    border-color: black;
+    background-color: black;
+    /* border-color: green; */
+        box-shadow: rgba(1, 58, 247, 0.405) 0px 0px 5px 1px,
+            rgba(1, 58, 247, 0.405) 0px 0px 20px 1px,
+            rgba(1, 58, 247, 0.405) 0px 0px 0px  inset;
+}
+.input:focus,
+.input:hover{
+  
+}
