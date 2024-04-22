@@ -1,5 +1,5 @@
 import './App.css'
-import {  useState } from "react";
+import {  useEffect, useState } from "react";
 import { nanoid } from 'nanoid';
 import { ContactList } from './ContactsList/ContactsList';
 import { Form } from './Form/Form';
@@ -15,9 +15,13 @@ const INITCONTACTS = {
 export const App = () => {
   const getData = () => {
     const initialValue = JSON.parse(localStorage.getItem("contacts"));
-    console.log(initialValue);
+    
       return (initialValue ? initialValue : INITCONTACTS);
   };
+  useEffect(() => {
+    
+    console.log(getData());
+  }, []);
 
 const [dataPhonebook, setDataPhonebook] = useState(getData());
 
@@ -54,10 +58,11 @@ const isExist = contacts.some(
       name: '',
       number: ''
     });
-    setData();
+    console.log(dataPhonebook)
+    
   };
 
-
+setData();
   const onDelete = (contactId) => {
     setDataPhonebook({
       ...dataPhonebook,
